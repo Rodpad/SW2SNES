@@ -1,0 +1,18 @@
+build/
+build-host/
+dist/
+versions/
+logs/
+__pycache__/
+.DS_Store
+*.nro
+*.nacp
+*.elf
+*.o
+# Never commit game ROMs
+test-roms/
+*.sfc
+*.smc
+*.fig
+*.swc
+*.zip

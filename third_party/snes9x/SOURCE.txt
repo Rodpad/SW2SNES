@@ -1,0 +1,1 @@
+Snes9x (libretro/snes9x) commit fae2fea08f74180759ef540ee94259213f503480, Sat Sep 19 12:23:24 2026 +0200
