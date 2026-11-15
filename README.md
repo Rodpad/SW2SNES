@@ -8,6 +8,51 @@ native C++ with OpenGL ES, built with devkitPro and the Switch 2 devkit
 
 No game ROMs are included or provided.
 
+## Installing
+
+### What you need
+
+- A Nintendo Switch 2 with [kaiHEN](https://github.com/ouncebrew/kaihen) set up, so
+  that the homebrew menu (**hbmenu**) runs.
+- A way to copy files to the console's SD card: take the card out and use a card
+  reader, or use an FTP server on the console (OunceShell's FTP server works).
+- Your own game files (`.sfc`, `.smc`, `.fig`, `.swc`, or `.zip` files with one of those inside). No games are included.
+
+### Steps
+
+1. Download `sw2snes.nro` from the
+   [latest release](https://github.com/Rodpad/SW2SNES/releases/latest).
+2. On the SD card, create the folder `/switch/sw2snes/` and copy `sw2snes.nro` into it,
+   so the file is at `/switch/sw2snes/sw2snes.nro`.
+3. Copy your games to `/roms/snes` on the SD card (create the folder if it is not
+   there; SW2SNES also creates it on its first launch). Games in subfolders are not listed;
+   a different folder can be chosen later in Settings > ROM folder.
+4. Put the card back (or close the FTP connection), start hbmenu through kaiHEN
+   and launch **SW2SNES**.
+
+Over FTP, the upload can be done from a computer's terminal, for example:
+
+```sh
+curl --ftp-create-dirs -T sw2snes.nro ftp://<console IP>:<port>/switch/sw2snes/sw2snes.nro
+```
+
+### Updating
+
+Replace `/switch/sw2snes/sw2snes.nro` with the one from the newest release. Settings,
+saves, save states and play time are kept in `/switch/sw2snes/` and are not touched
+by an update. (Close SW2SNES on the console before uploading over FTP; a running
+app's file cannot be replaced.)
+
+### Where things are kept
+
+| Path on the SD card | Contents |
+| --- | --- |
+| `/switch/sw2snes/sw2snes.nro` | The app |
+| `/switch/sw2snes/settings.json` | Settings, favourites and recently played |
+| `/switch/sw2snes/playtime.json` | Time played per game |
+| `/switch/sw2snes/*.srm`, `*.state*` | Battery saves and save states |
+| `/roms/snes` | Your games (default folder) |
+
 ## Features
 
 - Snes9x (libretro), including its enhancement-chip support (SuperFX, SA-1, DSP-n, CX4, S-DD1, SPC7110 and others)
@@ -26,18 +71,6 @@ No game ROMs are included or provided.
 - Favourites, recently played and time played per game
 - Zipped ROMs (`.zip` with a `.sfc`/`.smc` inside)
 - Per-game or global settings; advanced options can be hidden
-
-## Installing
-
-1. Set up kaiHEN on your Switch 2 so that hbmenu runs.
-2. Copy `sw2snes.nro` from the latest release to `/switch/sw2snes/sw2snes.nro`
-   on the SD card.
-3. Copy your games (`.sfc`, `.smc`, `.fig`, `.swc` or `.zip`) to `/roms/snes` on
-   the SD card. SW2SNES creates this folder on its first launch. A different
-   folder can be chosen in Settings > ROM folder.
-4. Launch **SW2SNES** from hbmenu.
-
-Settings, saves and play time are kept in `/switch/sw2snes/` on the SD card.
 
 ## Controls
 
