@@ -11,7 +11,7 @@ include $(DEVKITPRO)/libounce/switch2_rules
 
 APP_TITLE	:=	SW2SNES
 APP_AUTHOR	:=	Rodpad
-APP_VERSION	:=	1.0.1
+APP_VERSION	:=	1.1.0-exp.1
 
 TARGET		:=	sw2snes
 BUILD		:=	build
