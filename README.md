@@ -45,6 +45,11 @@ app's file cannot be replaced.)
   Last Played dates and time played; games are found in subfolders of the ROM folder too
 - Touch on every screen (tap, hold to highlight, drag to scroll), with an on-screen Menu button
   during play; UI size Normal (larger, easier to tap) or Compact
+- Box art and game details, downloaded on the console (no account needed) from the LaunchBox
+  Games Database, matched by the ROM's checksum (No-Intro). A details panel beside the game list shows the
+  box in 3D (drag to turn it), the publisher, year, genre and description (Settings > App >
+  Game details panel; Download missing info)
+- Themes: Dark, Light, Black, Blue, Purple, Red, Green, Orange, Retro and Retro Colour
 - Button remapping screen per player (all games, or one game), including turbo and stick directions
 - Single Joy-Cons held sideways work as a controller, with position-based button hints
 - Game Genie and Pro Action Replay codes (on-screen editor)
@@ -109,6 +114,8 @@ It also includes:
 - Roboto (Apache 2.0) and Source Code Pro (SIL OFL 1.1) fonts
 - libounce and libnx (ISC), libkaihen (ISC), OunceVK / Mesa (MIT), mimalloc (MIT),
   FreeType (FTL), HarfBuzz (MIT), libpng, zlib, minizip (zlib licence) and bzip2
+- curl (curl licence), Mbed TLS (Apache 2.0), stb_image (MIT / public domain) and the
+  Mozilla CA certificates (MPL 2.0), for downloading box art and game details
 
 - Date formats from the Unicode CLDR (Unicode licence)
 

@@ -11,7 +11,7 @@ include $(DEVKITPRO)/libounce/switch2_rules
 
 APP_TITLE	:=	SW2SNES
 APP_AUTHOR	:=	Rodpad
-APP_VERSION	:=	1.1.0
+APP_VERSION	:=	1.2.0-exp.1
 
 TARGET		:=	sw2snes
 BUILD		:=	build
@@ -29,7 +29,7 @@ CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -DNDEBUG -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK 
 CXXFLAGS	:= $(CFLAGS) -std=gnu++17
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
-LIBS	:= -lEGL -lGLESv2 -lglapi -ldrm_nouveau -lfreetype -lharfbuzz -lpng16 -lbz2 -lminizip -lz -lnx
+LIBS	:= -lEGL -lGLESv2 -lglapi -ldrm_nouveau -lfreetype -lharfbuzz -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -lpng16 -lbz2 -lminizip -lz -lnx
 LIBDIRS	:= $(PORTLIBS) $(LIBNX)
 
 ifneq ($(BUILD),$(notdir $(CURDIR)))
