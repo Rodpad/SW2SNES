@@ -47,8 +47,10 @@ app's file cannot be replaced.)
   during play; UI size Normal (larger, easier to tap) or Compact
 - Box art and game details, downloaded on the console (no account needed) from the LaunchBox
   Games Database, matched by the ROM's checksum (No-Intro). A details panel beside the game list shows the
-  box in 3D (drag to turn it), the publisher, year, genre and description (Settings > App >
-  Game details panel; Download missing info)
+  box in 3D (drag to turn it), the publisher, year, genre, region (NTSC / PAL / NTSC-J) and
+  description (Settings > App > Game details panel; Download missing info). With details
+  downloaded, the game list shows each game's proper title (Settings > App > Game names: Title or
+  File name)
 - Themes: Dark, Light, Black, Blue, Purple, Red, Green, Orange, Retro and Retro Colour
 - Button remapping screen per player (all games, or one game), including turbo and stick directions
 - Single Joy-Cons held sideways work as a controller, with position-based button hints
