@@ -16,3 +16,4 @@ test-roms/
 *.fig
 *.swc
 *.zip
+source/ss_dev.h
