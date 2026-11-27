@@ -29,6 +29,13 @@ app's file cannot be replaced.)
 
 ## Features
 
+- **Box art browsing, scraped on the console:** browse your games as a grid of box covers or as a
+  list, with a details panel showing the box in 3D (front, back and sides; drag to turn it), the
+  title, publisher, year, genre, region and description. Box art and details are downloaded on
+  the console from [ScreenScraper](https://www.screenscraper.fr), with no account needed and no PC
+  required (Settings > App > Download missing box art and descriptions; the app offers it the first
+  time games have none). Four views (List, List & details, Grid, Grid & details) on the right stick
+  press; with details downloaded, the list shows each game's proper title
 - Snes9x (libretro), including its enhancement-chip support (SuperFX, SA-1, DSP-n, CX4, S-DD1, SPC7110 and others)
 - Hi-res and interlaced modes (512 wide, 448/478 high)
 - Low input latency: one frame in flight, run-ahead (1–2 frames), frame delay at 60 Hz
@@ -45,13 +52,6 @@ app's file cannot be replaced.)
   Last Played dates and time played; games are found in subfolders of the ROM folder too
 - Touch on every screen (tap, hold to highlight, drag to scroll), with an on-screen Menu button
   during play; UI size Normal (larger, easier to tap) or Compact
-- Box art and game details, downloaded on the console from [ScreenScraper](https://www.screenscraper.fr)
-  (no account needed), matched by the ROM's checksum, name and size. A details panel beside the
-  game list shows the box in 3D with its front, back and sides (drag to turn it), the publisher,
-  year, genre, region (NTSC / PAL / NTSC-J) and description (Settings > App > Game details panel;
-  Download missing box art and descriptions). With details
-  downloaded, the game list shows each game's proper title (Settings > App > Game names: Title or
-  File name)
 - Themes: Dark, Light, Black, Blue, Purple, Red, Green, Orange, Retro and Retro Colour
 - Button remapping screen per player (all games, or one game), including turbo and stick directions
 - Single Joy-Cons held sideways work as a controller, with position-based button hints
@@ -74,10 +74,22 @@ app's file cannot be replaced.)
 Buttons can be remapped per player in Settings > Sound & controls (or for one game from
 the in-game Controls tab), including turbo.
 
-In the game list: the header row has the tabs, a search field and the sort order (left / right
-to move, A to use); the footer has Play, Favourite (−), Search (+), Settings (Y), Refresh (X) and
-Exit (B, press twice). L / R or ZL / ZR switch tabs, and pressing the left stick changes the order.
-Everything can also be tapped.
+In the game list:
+
+| Switch 2 | Game list |
+| --- | --- |
+| A | Play the highlighted game |
+| L / R | All / Favourites / Recent |
+| ZL / ZR | Page up / down (hold to keep paging) |
+| Left stick press | Next sort order (name, last played, date added) |
+| Right stick press | Next view: List & details, List, Grid & details, Grid |
+| − / + | Favourite / Search |
+| Y / X | Refresh / Settings |
+| B | Exit (press twice) |
+
+The list and the grid wrap round: past the first or last game, the D-pad stops on the header row
+(tabs, search, sort) or the footer buttons, then carries on round. On a single Joy-Con, SL switches
+tabs and SR pages down. Everything can also be tapped; drag to scroll, flick to glide.
 
 ## Building
 
