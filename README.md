@@ -8,6 +8,8 @@ native C++ with OpenGL ES, built with devkitPro and the Switch 2 devkit
 
 No game ROMs are included or provided.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8572f706-2455-44d2-bb2a-ae643969b65b" />
+
 ## Installing
 
 1. Set up kaiHEN on your Switch 2 so that hbmenu runs.
