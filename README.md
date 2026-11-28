@@ -8,7 +8,7 @@ native C++ with OpenGL ES, built with devkitPro and the Switch 2 devkit
 
 No game ROMs are included or provided.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c51edc7b-14d8-4c56-9beb-f456f1ed0771" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8572f706-2455-44d2-bb2a-ae643969b65b" />
 
 ## Installing
 
